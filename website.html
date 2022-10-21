@@ -9,8 +9,23 @@
   <body>
     <div class="navbar-expand bg-primary">
       <ul class="navbar-nav">
-        <li class="nav-item ms-5 me-4 navbar-text"><button type="button" class="btn btn-md btn-primary">Create Account</button></li>
-        <li class="nav-item me-5 ms-4 navbar-text"><button type="button" class="btn btn-md btn-primary" href="#about">About Us</button></li>
+        <li class="nav-item ms-5 me-4 navbar-text">
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">Create Account</button>
+          <div class="modal" id="myModal">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h4 class="modal-title">Error: 1234</h4>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                  Our servers are not functioning right now. Please try again later.
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="nav-item me-5 ms-4 navbar-text"><a class="nav-link active" href="#about"><button type="button" class="btn btn-md btn-primary">About Us</button></a></li>
         <li class="nav-item me-5 ms-4 navbar-text"><button type="button" class="btn btn-md btn-primary">Learn More</button></li>
         </li>
       </ul>
@@ -21,7 +36,7 @@
           <img class="img rounded" height="500" src="https://calaero.edu/wp-content/uploads/2020/01/How-To-Prepare-Before-Flight-School.jpg" alt="image error">
         </div>
         <div class="col-4">
-          <button type="button" class="btn btn-lg btn-success">Sign up for our Flight School!</button>
+          <button type="button" class="btn btn-lg btn-success" data-bs-toggle="modal" data-bs-target="#myModal">Sign up for our Flight School!</button>
         </div>
       </div>
       <hr>
